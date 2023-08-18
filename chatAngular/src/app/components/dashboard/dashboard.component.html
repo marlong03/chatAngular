@@ -1,0 +1,35 @@
+<section class="row container-container ">
+    
+    <section class="col">
+        <div class="row ">
+
+            <aside class="col-2  ">
+                <ul>
+                    <li>Chat</li>
+                </ul>
+            </aside>
+           <div class="col container-chats px-4  ">
+            <h3 class="p-3">Chat</h3>
+            <div>
+                <input type="search" placeholder="Buscar..."class=" inputSearch p-3">
+            </div>
+            <div class="list-contact overflow-auto mt-2 ">
+                <div class="contact me-3 my-3 d-flex py-3 bg-light " *ngFor="let contact of listaUsuarios" (click)="seleccionarUsuario(contact)">
+                    <div class="mx-3">
+                        <img src="assets/user_13230.png" style="width:50px" class="bg-warning rounded p-1"alt="">
+                    </div>
+                    <div>
+                        <p class="font-weight-bold"><strong> {{contact.nombre}}</strong></p>
+                        <p>Ultimo mensaje</p>
+                    </div>
+                </div>
+                
+            </div>
+           </div>
+        </div>
+    </section>
+    
+    <section class="col-8 container-chat ">
+        <app-chat [dataConversacion]="dataConversacion"></app-chat>
+    </section>
+</section>

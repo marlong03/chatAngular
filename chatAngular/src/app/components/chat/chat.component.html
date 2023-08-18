@@ -1,0 +1,26 @@
+<section class="chat-container overflow-hidden">
+
+<div class="d-flex align-items-center header-chat  text-dark py-3 px-5 text-light">
+    <div>
+
+        <img src="assets/user_13230.png" style="width:50px" class="me-3 bg-warning rounded p-1"alt="">
+    </div>
+    <div>
+
+        <h2>{{dataConversacion.usuario.nombre}}</h2>
+        <p>En linea</p>
+    </div>
+</div>
+<div class="conversation" #myDiv>
+    <ul>
+        <li class="p-3 my-3 mx-5 d-block" *ngFor="let msg of dataConversacion.messages">{{msg.mensaje}}</li>
+        <li class="p-3 my-3 mx-5 d-block" *ngFor="let msg of listaMensajes">{{msg}}</li>
+        
+    </ul>
+</div>
+<div class="d-flex justify-content-between align-items-center form-actions-chat row w-100 ">
+    <input type="text" class="col-10  p-3 ms-2 rounded" placeholder="Escribe un mensaje aquí" name="mensajeEnviar" [(ngModel)]="mensajeEnviar" id="msgEnviarText" (keyup.enter)="enviarMensaje()">
+    <button class="col btnEnviar btn btn-dark p-3 m-2" (click)="enviarMensaje()"> <img src="assets/enviar.png" alt="" ></button>
+</div>
+</section>
+

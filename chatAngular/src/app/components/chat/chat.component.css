@@ -1,0 +1,69 @@
+
+.form-actions-chat input[type=text]{
+    border:none;
+    outline: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    border: 2px solid #c8c7c7;
+}
+.form-actions-chat input[type=button]{
+    border:none;
+    border-top: 2px solid gray;
+    outline: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    
+}
+/* .form-actions-chat{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+        
+} */
+.chat-container{
+    background-color: #dfdfdf;
+    box-shadow: 0px 0px 10px #bfbfbf;
+}
+
+.btnEnviar img{
+    width: 20px;
+}
+
+.header-chat{
+}
+/* .conversation{
+    list-style: none;
+    position: relative;
+    overflow-y: scroll;
+    height: 600px;
+} */
+.conversation{
+    overflow-y: scroll;
+    height: 450px;
+
+}
+.conversation ul{
+    list-style: none;
+    margin-bottom: 0px;
+    
+}
+.conversation ul li{
+    position: relative;
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    
+    
+}
+.conversation ul li:nth-child(even){
+    background-color: #3e3ec0;
+    color:white;
+    text-align: right;
+    border-bottom-right-radius: 0 !important;
+}
+.conversation ul li:nth-child(odd){
+    background-color: #d1d1d0;
+    border-bottom-left-radius: 0 !important;
+
+}
